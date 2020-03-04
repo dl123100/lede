@@ -202,7 +202,7 @@ jobs:
           CONFIG_PACKAGE_tree=y
           CONFIG_PACKAGE_vim-fuller=y
           CONFIG_PACKAGE_wget=y
-          CONFIG_PACKAGE_wget-nossl=y
+          # CONFIG_PACKAGE_wget-nossl=y
           CONFIG_PACKAGE_automount=y
           CONFIG_PACKAGE_ntfs-3g=y
           EOF
