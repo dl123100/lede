@@ -168,12 +168,17 @@ jobs:
           CONFIG_PACKAGE_v2ray-plugin=y
           CONFIG_PACKAGE_simple-obfs=y
           CONFIG_PACKAGE_kmod-tun=y
-          # CONFIG_PACKAGE_luci-app-verysync=y
-          # CONFIG_PACKAGE_luci-app-wireguard=y
+          CONFIG_PACKAGE_luci-app-frpc=y
+          CONFIG_PACKAGE_luci-app-verysync=y
+          CONFIG_PACKAGE_luci-app-wireguard=y
+          CONFIG_PACKAGE_luci-app-transmission=y
+          CONFIG_PACKAGE_luci-app-baidupcs-web=y
+          CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-guest-wifi=y
           CONFIG_PACKAGE_luci-app-qos=y
           CONFIG_PACKAGE_luci-app-filebrowser=y
+          CONFIG_PACKAGE_luci-app-kodexplorer=y
           CONFIG_PACKAGE_luci-app-openclash=y
           CONFIG_PACKAGE_srelay=y
           EOF
@@ -202,7 +207,6 @@ jobs:
           cat >> .config <<EOF
           # # CONFIG_TARGET_IMAGES_PAD is not set
           # # CONFIG_VMDK_IMAGES is not set
-          # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           EOF
 
           # 
