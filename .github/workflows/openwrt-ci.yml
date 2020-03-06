@@ -210,7 +210,7 @@ jobs:
 
           sed -i 's/^[ \t]*//g' ./.config
           
-      - name: Setup Debug Session
+      # - name: Setup Debug Session
         # uses: P3TERX/debugger-action@master
           
       - name: Make download
