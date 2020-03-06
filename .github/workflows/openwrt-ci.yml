@@ -222,7 +222,7 @@ jobs:
           sed -i 's/^[ \t]*//g' ./.config
           
       - name: Setup Debug Session
-        uses: dl123100/debugger-action@master
+        uses: P3TERX/debugger-action@master
           
       - name: Make download
         run: |
