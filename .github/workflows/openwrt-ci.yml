@@ -220,10 +220,13 @@ jobs:
           # 
 
           sed -i 's/^[ \t]*//g' ./.config
-          make defconfig
-
+          
+      - name: Setup Debug Session
+        uses: dl123100/debugger-action@master
+          
       - name: Make download
         run: |
+          make defconfig
           make download -j8
           find ./dl/ -size -1024c -exec rm -f {} \;
           df -h
