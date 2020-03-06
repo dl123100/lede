@@ -143,45 +143,38 @@ jobs:
 
           # 常用LuCI插件选择:
           cat >> .config <<EOF
-          # CONFIG_PACKAGE_luci-app-adbyby-plus=y
           CONFIG_PACKAGE_luci-app-aria2=y
-          CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
-          # CONFIG_PACKAGE_luci-app-baidupcs-web=y
-          # CONFIG_PACKAGE_luci-app-docker=y
-          # CONFIG_PACKAGE_luci-app-frpc=y
-          # CONFIG_PACKAGE_luci-app-kodexplorer=y
-          # CONFIG_PACKAGE_luci-app-minidlna=y
-          # CONFIG_PACKAGE_luci-app-openvpn=y
-          # CONFIG_PACKAGE_luci-app-openvpn-server=y
-          # CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-webadmin=y
+          CONFIG_PACKAGE_luci-app-unblockmusic=y
+          CONFIG_PACKAGE_UnblockNeteaseMusicGo=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-smartdns=y
           CONFIG_PACKAGE_luci-app-passwall=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=y
+          CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
+          CONFIG_PACKAGE_shadowsocksr-libev-server=y
           # CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_v2ray-plugin=y
           CONFIG_PACKAGE_simple-obfs=y
           CONFIG_PACKAGE_kmod-tun=y
           # CONFIG_PACKAGE_luci-app-verysync=y
-          # CONFIG_PACKAGE_luci-app-webadmin=y
           # CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-guest-wifi=y
           CONFIG_PACKAGE_luci-app-qos=y
           CONFIG_PACKAGE_luci-app-filebrowser=y
           CONFIG_PACKAGE_luci-app-openclash=y
-          # CONFIG_PACKAGE_luci-app-transmission=y
           CONFIG_PACKAGE_srelay=y
-          # CONFIG_PACKAGE_luci-app-mwan3=y
-          # CONFIG_PACKAGE_luci-app-mwan3helper=y
-          # CONFIG_PACKAGE_luci-app-cifsd=y
           EOF
 
           # LuCI主题:
@@ -208,10 +201,6 @@ jobs:
           cat >> .config <<EOF
           # # CONFIG_TARGET_IMAGES_PAD is not set
           # # CONFIG_VMDK_IMAGES is not set
-          # CONFIG_PACKAGE_luci-app-pptp-server is not set
-          # CONFIG_PACKAGE_luci-app-zerotier is not set
-          # CONFIG_PACKAGE_luci-app-vsftpd is not set
-          # CONFIG_PACKAGE_luci-app-wifischedule is not set
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           EOF
 
@@ -222,7 +211,7 @@ jobs:
           sed -i 's/^[ \t]*//g' ./.config
           
       - name: Setup Debug Session
-        uses: P3TERX/debugger-action@master
+        # uses: P3TERX/debugger-action@master
           
       - name: Make download
         run: |
