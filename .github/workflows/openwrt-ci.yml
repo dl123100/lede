@@ -10,9 +10,9 @@
 name: OpenWrt-CI
 
 on:
-  push:
-    branches: 
-      - master
+  # push:
+  #   branches: 
+  #     - master
   # schedule:
   #   - cron: 0 20 * * *
   # release:
@@ -21,7 +21,6 @@ on:
      types: [started]
 
 env:
-  REPO_BRANCH: master
   DIY_SH: diy.sh
   SSH_ACTIONS: false
 
@@ -46,7 +45,7 @@ jobs:
           git config --global user.email "dl123100@gmail.com"
           git config --global user.name "dl123100"
           git pull https://github.com/coolsnowwolf/lede.git --no-edit --strategy-option ours
-          git push origin REPO_BRANCH
+          git push origin master
 
       - name: Space cleanup
         env:
