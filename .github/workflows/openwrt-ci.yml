@@ -20,11 +20,17 @@ on:
   watch:
      types: [started]
 
+env:
+  REPO_BRANCH: master
+  DIY_SH: diy.sh
+  SSH_ACTIONS: false
+
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
 
@@ -40,7 +46,7 @@ jobs:
           git config --global user.email "dl123100@gmail.com"
           git config --global user.name "dl123100"
           git pull https://github.com/coolsnowwolf/lede.git --no-edit --strategy-option ours
-          git push origin master
+          git push origin REPO_BRANCH
 
       - name: Space cleanup
         env:
@@ -227,9 +233,15 @@ jobs:
           # 
 
           sed -i 's/^[ \t]*//g' ./.config
+
+      # - name: Load Custom Configuration
+      #   run: |
+      #     chmod +x $DIY_SH
+      #     ../$DIY_SH
           
-      # - name: Setup Debug Session
-      #   uses: P3TERX/debugger-action@master
+      - name: Setup Debug Session
+        uses: P3TERX/debugger-action@master
+        if: env.SSH_ACTIONS == 'true'
 
       - name: Make download
         run: |
