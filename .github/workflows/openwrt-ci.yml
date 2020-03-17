@@ -202,7 +202,7 @@ jobs:
           # CONFIG_PACKAGE_srelay=y
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           # CONFIG_PACKAGE_luci-app-zerotier is not set
-          # CONFIG_PACKAGE_luci-app-zerotier is not set
+          # CONFIG_PACKAGE_luci-app-vlmcsd is not set
           EOF
           
           # LuCI主题:
