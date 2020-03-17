@@ -22,7 +22,7 @@ on:
 
 env:
   DIY_SH: diy.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
 
 jobs:
 
@@ -239,7 +239,7 @@ jobs:
       #     ../$DIY_SH
           
       - name: Setup Debug Session
-        uses: P3TERX/debugger-action@master
+        uses: dl123100/debugger-action@master
         if: env.SSH_ACTIONS == 'true'
 
       - name: Make download
