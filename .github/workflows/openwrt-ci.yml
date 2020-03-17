@@ -162,7 +162,7 @@ jobs:
           # 常用LuCI插件选择:
           cat >> .config <<EOF
           # CONFIG_PACKAGE_luci-app-aria2=y
-          CONFIG_PACKAGE_luci-app-webadmin=y
+          # CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           # CONFIG_PACKAGE_UnblockNeteaseMusicGo=y
           # CONFIG_UnblockNeteaseMusic_NodeJS=y
@@ -194,7 +194,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-qbittorrent=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           # CONFIG_PACKAGE_luci-app-guest-wifi=y
-          CONFIG_PACKAGE_luci-app-qos=y
+          # CONFIG_PACKAGE_luci-app-qos=y
           CONFIG_PACKAGE_luci-app-fileassistant=y
           # CONFIG_PACKAGE_luci-app-filebrowser=y
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
@@ -207,7 +207,7 @@ jobs:
           
           # LuCI主题:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-theme-argon=y
+          # CONFIG_PACKAGE_luci-theme-argon=y
           EOF
 
           # 常用软件包:
@@ -216,7 +216,7 @@ jobs:
           CONFIG_PACKAGE_htop=y
           CONFIG_PACKAGE_screen=y
           CONFIG_PACKAGE_tree=y
-          CONFIG_PACKAGE_vim-fuller=y
+          # CONFIG_PACKAGE_vim-fuller=y
           CONFIG_PACKAGE_wget=y
           EOF
           
