@@ -22,7 +22,7 @@ on:
 
 env:
   DIY_SH: diy.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
 
 jobs:
 
