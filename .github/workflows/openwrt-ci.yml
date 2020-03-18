@@ -205,6 +205,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-vsftpd is not set
           # CONFIG_PACKAGE_luci-app-ddns is not set
           # CONFIG_PACKAGE_luci-app-wol is not set
+          # CONFIG_PACKAGE_luci-app-upnp is not set
           EOF
           
           # LuCI主题:
