@@ -170,10 +170,9 @@ jobs:
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
           # CONFIG_PACKAGE_luci-app-ttyd=y
           # CONFIG_PACKAGE_luci-app-smartdns=y
@@ -203,8 +202,9 @@ jobs:
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           # CONFIG_PACKAGE_luci-app-zerotier is not set
           # CONFIG_PACKAGE_luci-app-vlmcsd is not set
-          # CONFIG_PACKAGE_vsftpd is not set
+          # CONFIG_PACKAGE_luci-app-vsftpd is not set
           # CONFIG_PACKAGE_luci-app-ddns is not set
+          # CONFIG_PACKAGE_luci-app-wol is not set
           EOF
           
           # LuCI主题:
