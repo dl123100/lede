@@ -204,6 +204,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-zerotier is not set
           # CONFIG_PACKAGE_luci-app-vlmcsd is not set
           # CONFIG_PACKAGE_vsftpd is not set
+          # CONFIG_PACKAGE_luci-app-ddns is not set
           EOF
           
           # LuCI主题:
