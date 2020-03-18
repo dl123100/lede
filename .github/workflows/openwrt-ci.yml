@@ -168,13 +168,13 @@ jobs:
           # CONFIG_UnblockNeteaseMusic_NodeJS=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
+          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
           # CONFIG_PACKAGE_luci-app-ttyd=y
           # CONFIG_PACKAGE_luci-app-smartdns=y
           # CONFIG_PACKAGE_luci-app-passwall=y
@@ -183,8 +183,8 @@ jobs:
           # CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
           # CONFIG_PACKAGE_shadowsocksr-libev-server=y
           # CONFIG_PACKAGE_luci-app-v2ray-server=y
-          CONFIG_PACKAGE_v2ray-plugin=y
-          CONFIG_PACKAGE_simple-obfs=y
+          # CONFIG_PACKAGE_v2ray-plugin=y
+          # CONFIG_PACKAGE_simple-obfs=y
           # CONFIG_PACKAGE_kmod-tun=y
           # CONFIG_PACKAGE_luci-app-frpc=y
           # CONFIG_PACKAGE_luci-app-verysync=y
@@ -203,6 +203,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           # CONFIG_PACKAGE_luci-app-zerotier is not set
           # CONFIG_PACKAGE_luci-app-vlmcsd is not set
+          # CONFIG_PACKAGE_vsftpd is not set
           EOF
           
           # LuCI主题:
