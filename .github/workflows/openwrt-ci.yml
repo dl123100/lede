@@ -208,6 +208,7 @@ jobs:
           # CONFIG_PACKAGE_ddns-scripts_dnspod is not set
           # CONFIG_PACKAGE_ddns-scripts_aliyun is not set
           # CONFIG_PACKAGE_luci-app-accesscontrol is not set
+          # CONFIG_PACKAGE_luci-app-guest-wifi is not set
           EOF
           
           # LuCI主题:
