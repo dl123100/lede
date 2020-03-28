@@ -175,7 +175,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
           # CONFIG_PACKAGE_luci-app-ttyd=y
-          CONFIG_PACKAGE_luci-app-smartdns=y
+          # CONFIG_PACKAGE_luci-app-smartdns=y
           # CONFIG_PACKAGE_luci-app-passwall=y
           # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=y
           # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=y
@@ -197,7 +197,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-fileassistant=y
           # CONFIG_PACKAGE_luci-app-filebrowser=y
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
-          CONFIG_PACKAGE_luci-app-openclash=y
+          # CONFIG_PACKAGE_luci-app-openclash=y
           # CONFIG_PACKAGE_srelay=y
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           # CONFIG_PACKAGE_luci-app-vlmcsd is not set
@@ -207,6 +207,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-upnp is not set
           # CONFIG_PACKAGE_ddns-scripts_dnspod is not set
           # CONFIG_PACKAGE_ddns-scripts_aliyun is not set
+          # CONFIG_PACKAGE_luci-app-accesscontrol is not set
           EOF
           
           # LuCI主题:
