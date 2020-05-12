@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=UnblockNeteaseMusic
-PKG_VERSION:=0.24.1
+PKG_VERSION:=0.25.0
 PKG_RELEASE:=4
 
 PKG_LICENSE:=MIT
